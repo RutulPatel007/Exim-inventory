@@ -22,6 +22,8 @@ function App() {
   
         <div className="App-content">
           <Routes>
+          <Route path="/Exim-inventory" element={<div><Banner/> <Projects/></div>} />
+          <Route path="/" element={<div><Banner/> <Projects/></div>} />
             <Route path="/home" element={<div><Banner/> <Projects/></div>} />
             <Route path="/aboutus" element={<Skills />} />
             <Route path="/products" element={<Projects />} />
