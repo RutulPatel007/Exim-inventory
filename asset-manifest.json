@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Exim-inventory/static/css/main.7b70caa4.css",
-    "main.js": "/Exim-inventory/static/js/main.a689af17.js",
+    "main.js": "/Exim-inventory/static/js/main.d1033f75.js",
     "static/js/453.02480b1f.chunk.js": "/Exim-inventory/static/js/453.02480b1f.chunk.js",
     "static/media/pp3.png": "/Exim-inventory/static/media/pp3.31ff662ea340263332af.png",
     "static/media/pp4.png": "/Exim-inventory/static/media/pp4.e3294051c609a66d22b7.png",
@@ -36,11 +36,11 @@
     "static/media/arrow1.svg": "/Exim-inventory/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
     "static/media/nav-icon2.svg": "/Exim-inventory/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.7b70caa4.css.map": "/Exim-inventory/static/css/main.7b70caa4.css.map",
-    "main.a689af17.js.map": "/Exim-inventory/static/js/main.a689af17.js.map",
+    "main.d1033f75.js.map": "/Exim-inventory/static/js/main.d1033f75.js.map",
     "453.02480b1f.chunk.js.map": "/Exim-inventory/static/js/453.02480b1f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7b70caa4.css",
-    "static/js/main.a689af17.js"
+    "static/js/main.d1033f75.js"
   ]
 }
