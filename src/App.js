@@ -16,14 +16,13 @@ import {ProjectPage4} from "./components/ProjectPage4";
 
 function App() {
   return (
-    <Router>
+    <Router basename="Exim-inventory">
       <div className="App">
         <NavBar />
   
         <div className="App-content">
           <Routes>
-          <Route path="/Exim-inventory" element={<div><Banner/> <Projects/></div>} />
-          <Route path="/" element={<div><Banner/> <Projects/></div>} />
+          <Route exact path="/" element={<div><Banner/> <Projects/></div>} />
             <Route path="/home" element={<div><Banner/> <Projects/></div>} />
             <Route path="/aboutus" element={<Skills />} />
             <Route path="/products" element={<Projects />} />

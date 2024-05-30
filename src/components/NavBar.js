@@ -7,15 +7,19 @@ import navIcon2 from '../assets/img/github-mark-c791e9551fe4/github-mark/github-
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import { HashLink } from 'react-router-hash-link';
 import {
-  BrowserRouter as Router
+  BrowserRouter as Router,Link
 } from "react-router-dom";
-// import {useHistory} from 'react-router-dom';
+import { Link45deg } from 'react-bootstrap-icons';
+import {useNavigate} from 'react-router-dom';
 
 export const NavBar = () => {
-  // const history = useHistory();
+  const navigate = useNavigate();
 
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+  const redirectToProjects = (product) => {
+    navigate(`/products/${product}`);
+  };
 
   useEffect(() => {
     const onScroll = () => {
@@ -35,9 +39,7 @@ export const NavBar = () => {
     setActiveLink(value);
   }
 
-  const redirectToProjects = () => {
-    window.location.href = "/products";
-  }
+  
 
   // const handleDropdownClick = () => {
   //   history.push('/projects');
@@ -56,22 +58,24 @@ export const NavBar = () => {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="/home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-              <Nav.Link href="/aboutus" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>About Us</Nav.Link>
-              <NavDropdown
-              
-        title="Our Products"
+              <Nav.Link as={Link} to="/home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+              <Nav.Link as={Link} to="/aboutus" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>About Us</Nav.Link>
+              <NavDropdown     
+       title={
+        <span onClick={() => redirectToProjects('')}>
+          Our Products
+        </span>
+      }
         id="basic-nav-dropdown"
         show={activeLink === 'projects'}
         onMouseEnter={() => onUpdateActiveLink('projects')}
         onMouseLeave={() => onUpdateActiveLink(null)}
-        onClick={()=>redirectToProjects()}
-      >
+   >
         {/* Your dropdown items */}
-        <NavDropdown.Item href="/products/product1">Reactive Dyes</NavDropdown.Item>
-        <NavDropdown.Item href="/products/product2">Direct Dyes</NavDropdown.Item>
-        <NavDropdown.Item href="/products/product3">Acid Dyes</NavDropdown.Item>
-        <NavDropdown.Item href="/products/product4">Dyes Intermediate</NavDropdown.Item>
+        <NavDropdown.Item  onClick={()=>redirectToProjects("product1")}>Reactive Dyes</NavDropdown.Item>
+        <NavDropdown.Item  onClick={()=>redirectToProjects("product2")}>Direct Dyes</NavDropdown.Item>
+        <NavDropdown.Item  onClick={()=>redirectToProjects("product3")}>Acid Dyes</NavDropdown.Item>
+        <NavDropdown.Item  onClick={()=>redirectToProjects("product4")}>Dyes Intermediate</NavDropdown.Item>
         {/* Add more dropdown items as needed */}
       </NavDropdown>
             </Nav>
