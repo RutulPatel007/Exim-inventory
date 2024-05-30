@@ -81,7 +81,37 @@ p.success {
 p.danger {
 	color: red;
 }
+
+/* App.css */
+/* App.css */
+/* .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.NavBar {
+  flex: none; /* Prevent the navigation bar from growing */
+/* } */
+
+/* .App-content {
+  flex: 1; /* Allow the content area to fill the remaining space */
+  /* padding-top: 225px; /* Adjust the padding to provide space for the navigation bar */
+/* } */ 
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.App,.App-content{
+  flex: 1;
+}
 /************ Navbar Css ************/
+
+.navbar-brand img {
+  height: 115px; /* Adjust the height as needed */
+}
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -97,7 +127,7 @@ nav.navbar.scrolled {
 nav.navbar a.navbar-brand {
     width: 9%;
 }
-nav.navbar .navbar-nav .nav-link.navbar-link {
+nav.navbar .navbar-nav .nav-link.navbar-link ,#basic-nav-dropdown{
   font-weight: 400;
   color: #fff !important;
   letter-spacing: 0.8px;
@@ -105,6 +135,56 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   font-size: 18px;
   opacity: 0.75;
 }
+#basics-nav-dropdown, #basic-nav-dropdown .dropdown-menu{
+  font-weight: 400;
+  color: #fff !important;
+  letter-spacing: 0.8px;
+  padding: 0 25px;
+  font-size: 18px;
+  opacity: 0.75;
+}
+
+#basic-nav-dropdown:hover {
+  opacity: 1;
+} 
+
+
+/* Custom CSS for Navbar hover effect */
+#projects-nav-dropdown .dropdown-menu {
+  display: none;
+  background-color: #fff; /* Background color of dropdown */
+  border: 1px solid #ddd; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for dropdown */
+  margin-top: 0;
+  padding: 10px 0; /* Padding inside dropdown */
+  transition: opacity 0.3s ease; /* Smooth transition */
+  opacity: 0;
+  pointer-events: none;
+}
+
+#projects-nav-dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1; /* Full opacity on hover */
+  pointer-events: auto;
+}
+
+/* Styling for dropdown items */
+#projects-nav-dropdown .dropdown-item {
+  padding: 10px 20px; /* Padding for items */
+  color: #333; /* Text color */
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+#projects-nav-dropdown .dropdown-item:hover {
+  background-color: #f8f9fa; /* Background color on hover */
+  color: #007bff; /* Text color on hover */
+}
+
+
+
+
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
@@ -310,7 +390,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
-  margin-top: -60px;
+  margin-top: 260px;
 }
 .skill h2 {
 	font-size: 45px;
@@ -341,10 +421,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
+
+
+
 .project {
   padding: 80px 0;
   position: relative;
   background-color: black;
+}
+.project_margin {
+  margin-top: 100px;
+
 }
 .project h2 {
 	font-size: 45px;
@@ -466,9 +553,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/************ Contact Css ************/
+.contact_margin{
+  margin-top: 100px;
+
+}
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: #121212;
   padding: 60px 0 200px 0;
 }
 .contact img {
@@ -615,4 +706,167 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+
+
+
+.project_page * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.project_page body {
+  font-family: Arial, sans-serif;
+  
+}
+.project_page_margin{
+  /* margin-top: 150px; */
+  background-color: #575757;
+
+}
+.project_page {
+  display: flex;
+}
+
+.project_page .menu { 
+  overflow-y: auto; 
+  
+  width: 20%;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+
+    position: sticky;
+    /* margin-top: 200px; */
+    max-height: 550px;
+  
+  
+}
+
+.project_page .menu ul {
+  list-style-type: none;
+  
+}
+
+
+.project_page .menu li {
+  padding: 30px 0;
+  cursor: pointer;
+} 
+
+.project_page .menu li:hover {
+  background-color: #575757;
+}
+.project_page .menu .heading {
+ 
+  font-size: 30px;
+  
+}
+.project_page .menu .heading:hover {
+  background-color: #333;
+  
+}
+
+.project_page .content {
+
+  scroll-behavior: smooth;
+  width: 80%;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.project_page h1 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.project_page table {
+  width: 100%;
+  border-collapse: separate;
+  margin-bottom: 20px;
+}
+
+.project_page table, th, td {
+  border: 3px solid #ffffff;
+  padding: 16px;
+  text-align: center;
+}
+
+/* .project_page th, td {
+  
+} */
+
+.project_page th {
+  background-color: #ffffff;
+  font-weight: bold;
+ 
+  border-left: 3px solid #ffffff;
+}
+
+
+.project_page2 {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url('./assets/img/pp2.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project_page3 {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url('./assets/img/pp3.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.pp3_table {
+  width: 100%; /* Make the table fill the container */
+  border-collapse: collapse; /* Collapse the borders between cells */
+  border-spacing: 0; /* Set the space between table cells to zero */
+}
+.pp3_table td, th {
+  padding: 10px; /* Add padding to cells */
+  border: 1px solid #ddd; /* Add borders to cells */
+  text-align: center; /* Align text to the left */
+}
+.pp3_table th {
+  background-color: #f2f2f2; /* Background color for header cells */
+}
+
+.table_pp4 td, th {
+  padding: 10px; /* Add padding to cells */
+  border: 1px solid #ddd; /* Add borders to cells */
+  text-align: center; /* Align text to the left */
+}
+.table_pp4 th {
+  background-color: #f2f2f2; /* Background color for header cells */
+}
+.table_pp4{
+  width: 100%; /* Make the table fill the container */
+  border-collapse: collapse; /* Collapse the borders between cells */
+  border-spacing: 0; /* Set the space between table cells to zero */
+}
+
+.project_page4 {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url('./assets/img/pp4.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} 
+
+
+.project_page1 {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url('./assets/img/pp1.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

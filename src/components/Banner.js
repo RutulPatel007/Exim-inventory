@@ -5,6 +5,9 @@ import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+// import { Link } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 // import AnimatedLetters from '../components/AnimatedLetters'
 
 export const Banner = () => {
@@ -58,6 +61,7 @@ export const Banner = () => {
 
 
   return (
+    // <BrowserRouter>
     <section className="banner" id="home">
       <Container>
         <Row className="aligh-items-center">
@@ -74,8 +78,9 @@ export const Banner = () => {
             /> */}
           </h1>
                 <h1>{`Hi! I'm Rutul`} <span className="txt-rotate" dataPeriod="10" data-rotate='[ "Computer Science Student","Web Developer", "Tech Enthusiast",  ]'><span className="wrap">{text}</span></span></h1>
-                  <p></p>
+                  <Link to="/connect">
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  </Link>
               </div>}
             </TrackVisibility>
           </Col>
@@ -90,5 +95,6 @@ export const Banner = () => {
         </Row>
       </Container>
     </section>
+    //  </BrowserRouter>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
+import { Container, Row, Col, Tab, Nav ,Carousel} from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/1693190469944.jpg";
 import projImg3 from "../assets/img/istockphoto-540983728-612x612.jpg";
@@ -15,110 +15,73 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Airline Management System",
+      id:1,
+      title: "Reactive Dyes",
       description: "C and System calls",
       imgUrl: projImg1,
       link:""
     },
     {
-      title: "Chat App",
+      id:2,
+      title: "Direct Dyes",
       description: "Django Framework",
       imgUrl: projImg2,
       link:""
     },
     {
-      title: "Job Finder App",
+      id:3,
+      title: "Acid Dyes",
       description: "Web Scraping with Python",
       imgUrl: projImg3,
       link:""
     },
-  ];
-  const projects2=
-  [ {
-      title: "MIPS Assembler and Processor",
+  {
+    id:4,
+      title: "Dyes Intermediate",
       description: "Python ",
       imgUrl: projImg4,
       link:""
     },
-    {
-      title: "Photo Editer App",
-      description: "Angular and Spring Boot",
-      imgUrl: projImg5,
-      link:""
-    },
-    {
-      title: "Portfolio Website",
-      description: "React JS and Bootstrap",
-      imgUrl: projImg6,
-      link:""
-    },
-
+    
   
   ];
 
+  const pairedProjects = [];
+  for (let i = 0; i < projects.length; i += 2) {
+    pairedProjects.push([projects[i], projects[i + 1]]);
+  }
+
   return (
     <section className="project" id="projects">
+      <div className="project_margin">
       <Container>
         <Row>
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                {/* <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p> */}
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
+                <h2>Our Products</h2>
+                <br></br>
+                <Carousel>
+                  {pairedProjects.map((pair, index) => (
+                    <Carousel.Item key={index}>
+                      <Row className="justify-content-center">
+                        {pair.map((project) => (
+                          <Col key={project.id} className="d-flex justify-content-center" >
+                            <ProjectCard {...project}  />
+                          </Col>
+                        ))}
                       </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="second">
-                      {/* <p>In Progress...</p> */}
-                      <Row>
-                        {
-                          projects2.map((projects2, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...projects2}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Coming soon...</p>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
+                    </Carousel.Item>
+                  ))}
+                </Carousel>
               </div>}
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
       <img className="background-image-right" src={colorSharp2}></img>
+      </div>
     </section>
   )
 }
