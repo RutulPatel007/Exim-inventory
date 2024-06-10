@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container,NavDropdown } from "react-bootstrap";
-import logo from '../assets/img/logo_sub-removebg-preview.png';
+import logo from '../assets/img/CHEMZONES.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/github-mark-c791e9551fe4/github-mark/github-mark-white.png';
 import navIcon3 from '../assets/img/nav-icon3.svg';
@@ -60,6 +60,8 @@ export const NavBar = () => {
             <Nav className="ms-auto">
               <Nav.Link as={Link} to="/home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link as={Link} to="/aboutus" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>About Us</Nav.Link>
+              <Nav.Link as={Link} to="/quality" className={activeLink === 'quality' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('quality')}>Quality</Nav.Link>
+              
               <NavDropdown     
        title={
         <span onClick={() => redirectToProjects('')}>
@@ -70,6 +72,7 @@ export const NavBar = () => {
         show={activeLink === 'projects'}
         onMouseEnter={() => onUpdateActiveLink('projects')}
         onMouseLeave={() => onUpdateActiveLink(null)}
+        className="nav-dropdown-menu" 
    >
         {/* Your dropdown items */}
         <NavDropdown.Item  onClick={()=>redirectToProjects("product1")}>Reactive Dyes</NavDropdown.Item>

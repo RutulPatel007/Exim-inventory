@@ -13,10 +13,13 @@ import {ProjectPage} from "./components/ProjectPage";
 import {ProjectPage2} from "./components/ProjectPage2";
 import {ProjectPage3} from "./components/ProjectPage3";
 import {ProjectPage4} from "./components/ProjectPage4";
+import { ScrollToTop } from './components/ScrollToTop';
+import { Quality } from './components/Quality';
 
 function App() {
   return (
     <Router basename="Exim-inventory">
+      <ScrollToTop />
       <div className="App">
         <NavBar />
   
@@ -25,6 +28,7 @@ function App() {
           <Route exact path="/" element={<div><Banner/> <Projects/></div>} />
             <Route path="/home" element={<div><Banner/> <Projects/></div>} />
             <Route path="/aboutus" element={<Skills />} />
+            <Route path="/quality" element={<Quality />} />
             <Route path="/products" element={<Projects />} />
             <Route path="/connect" element={<></>} />
             <Route path="/products/product1" element={<ProjectPage/>}/>

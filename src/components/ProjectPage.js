@@ -197,8 +197,8 @@ export const ProjectPage = () => {
       <div className="project_page">
       
         <div className="menu"  style={{ position: "sticky", top: 0, zIndex: 100 }}>
-          <ul>
-          <li className='heading'>REACTIVE DYES</li>
+          <ul className="menuu">
+            <li className='heading'>REACTIVE DYES</li>
             <li><button onClick={() => scrollToSection('REACTIVE COLD DYES')}>REACTIVE COLD DYES</button></li>
             <li><button onClick={() => scrollToSection('REACTIVE HE DYES')}>REACTIVE HE DYES</button></li>
             <li><button onClick={() => scrollToSection('REACTIVE HOT DYES')}>REACTIVE HOT DYES</button></li>

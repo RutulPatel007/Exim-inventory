@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container, Row, Col, Tab, Nav ,Carousel} from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/1693190469944.jpg";
-import projImg3 from "../assets/img/istockphoto-540983728-612x612.jpg";
-import projImg2 from "../assets/img/gettyimages-1311966784-612x612.jpg";
-import projImg4 from "../assets/img/3.jpg";
+import projImg1 from "../assets/img/pp1.png";
+import projImg3 from "../assets/img/pp3.png";
+import projImg2 from "../assets/img/pp2.png";
+import projImg4 from "../assets/img/pp4.png";
 import projImg5 from "../assets/img/google-photos.jpg";
 import projImg6 from "../assets/img/Screenshot (18).png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -67,7 +67,7 @@ export const Projects = () => {
                     <Carousel.Item key={index}>
                       <Row className="justify-content-center">
                         {pair.map((project) => (
-                          <Col key={project.id} className="d-flex justify-content-center" >
+                          <Col key={project.id} className="d-flex justify-content-center" style={{ minHeight: '300px' , minWidth: '450px'}}  >
                             <ProjectCard {...project}  />
                           </Col>
                         ))}

@@ -1,14 +1,24 @@
-import React from 'react';
-import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import React, { useState, useEffect } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import headerImg from '../assets/img/header-img.svg';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-// import { Link } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
-import { BrowserRouter } from 'react-router-dom';
-// import AnimatedLetters from '../components/AnimatedLetters'
+import SwiperCore from 'swiper';
+import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
+import image1 from '../assets/img/image1.jpg';
+import image2 from '../assets/img/image2.jpg';
+import image3 from '../assets/img/image3.jpg';
+import image4 from '../assets/img/image4.jpg';
+import image5 from '../assets/img/image5.jpg';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/pagination';
+
+// Install modules
+SwiperCore.use([Autoplay, EffectFade, Pagination]);
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -16,7 +26,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Computer Science Student","Web Developer", "Tech Enthusiast",  ];
+  const toRotate = ["Computer Science Student", "Web Developer", "Tech Enthusiast"];
   const period = 2000;
 
   useEffect(() => {
@@ -25,7 +35,7 @@ export const Banner = () => {
     }, delta);
 
     return () => { clearInterval(ticker) };
-  }, [text])
+  }, [text]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -50,51 +60,56 @@ export const Banner = () => {
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
-  }
-  // const [letterClass, setLetterClass] = useState('text-animate')
+  };
 
-  // useEffect(() => {
-  //   return setTimeout(() => {
-  //     setLetterClass('text-animate-hover')
-  //   }, 3000)
-  // }, [])
-
+  const images = [
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+  ];
 
   return (
-    // <BrowserRouter>
-    <section className="banner" id="home">
-      <Container>
-        <Row className="aligh-items-center">
+    <section className="banner" id="home" style={{ position: 'relative', height: '100vh', overflow: 'hidden' }}>
+      <Swiper
+        modules={[Autoplay, EffectFade, Pagination]}
+        loop={true}
+        autoplay={{
+          delay: 5000,
+          disableOnInteraction: false,
+        }}
+        effect="fade"
+        fadeEffect={{
+          crossFade: true,
+        }}
+        pagination={{ clickable: true }}
+        style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}
+      >
+        {images.map((image, index) => (
+          <SwiperSlide key={index}>
+            <img src={image} alt={`Slide ${index + 1}`} style={{ width: '100%', height: '100vh', objectFit: 'cover' }} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <Container style={{ position: 'relative', zIndex: 1 }}>
+        <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to my Portfolio</span>
-                <h1>
-            {/* <AnimatedLetters
-              letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-              idx={15}
-            /> */}
-          </h1>
-                <h1>{`Hi! I'm Rutul`} <span className="txt-rotate" dataPeriod="10" data-rotate='[ "Computer Science Student","Web Developer", "Tech Enthusiast",  ]'><span className="wrap">{text}</span></span></h1>
-                  <Link to="/connect">
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <h2>Welcome to Chemzone</h2>
+                  <br></br>
+                  <p>We are an exporter supplier manufacturer and </p><p>trader of Dyes for various Industries</p>
+                  <Link to="/connect" className='custom-link'>
+                    <button>Let’s Connect <ArrowRightCircle size={25} /></button>
                   </Link>
-              </div>}
-            </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
                 </div>}
             </TrackVisibility>
           </Col>
+          
         </Row>
       </Container>
     </section>
-    //  </BrowserRouter>
   )
-}
+};
