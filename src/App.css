@@ -957,6 +957,44 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 768px) {
+  .project_page table, 
+  .project_page th, 
+  .project_page td, 
+  .pp3_table td, 
+  .pp3_table th, 
+  .table_pp4 td, 
+  .table_pp4 th {
+    font-size: 14px;
+    
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project_page table, 
+  .project_page th, 
+  .project_page td, 
+  .pp3_table td, 
+  .pp3_table th, 
+  .table_pp4 td, 
+  .table_pp4 th {
+    font-size: 12px;
+    
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .project_page table, 
+  .project_page th, 
+  .project_page td, 
+  .pp3_table td, 
+  .pp3_table th, 
+  .table_pp4 td, 
+  .table_pp4 th {
+    font-size: 10px;
+    
+  }
+}
 
 
 
