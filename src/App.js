@@ -18,7 +18,7 @@ import { Quality } from './components/Quality';
 
 function App() {
   return (
-    <Router basename="Exim-inventory">
+    <Router basename="">
       <ScrollToTop />
       <div className="App">
         <NavBar />

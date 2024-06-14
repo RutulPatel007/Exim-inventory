@@ -1,6 +1,6 @@
 {
   "name": "exim-inventory",
-  "homepage": "https://RutulPatel007.github.io/Exim-inventory",
+  "homepage": "./",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
