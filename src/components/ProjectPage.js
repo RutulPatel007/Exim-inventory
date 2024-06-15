@@ -215,7 +215,7 @@ export const ProjectPage = () => {
 
 
         <div className="content">
-          <div id="REACTIVE COLD DYES">
+          <div id="REACTIVE COLD DYES" style={{ overflowX: 'auto' }}>
             <h1>REACTIVE COLD DYES</h1>
             <p>Reactive dyes are a class of highly coloured organic substances, primarily used for tinting textiles, that attach themselves to their substrates by a chemical reaction that forms a covalent bond between the molecule of dye and that of the fibre. The dyestuff thus becomes a part of the fibre and is much less likely to be removed by washing than are dyestuffs that adhere by adsorption.
 
@@ -227,7 +227,7 @@ export const ProjectPage = () => {
 </p><br></br><p>Fiber reactive dyes are the most permanent of all dye types. Unlike other dyes, it actually forms a covalent bond with the cellulose or protein molecule. Once the bond is formed, what you have is one molecule, as the dye molecule has become an actual part of the cellulose fiber molecule. No wonder you can safely wash a garment that has been dyed in bright fiber reactive colours with white clothing, a hundred times, without endangering the whites in the least - even if it is all different bright colours, or even solid black! In contrast to all other dyes the reactive dyes bind chemically to the textile fibres, significantly improving the product's colour stability and washability. Thus reactive dying of cotton is currently the most widespread textile dying process in the world.</p>
           
 <h1>Reactive Cold Dyes - Fastness Properties</h1>
-      <table>
+      <table style={{ overflowX: 'auto' }}>
         <thead>
           <tr>
             <th >Dye Name</th>
@@ -269,12 +269,12 @@ export const ProjectPage = () => {
 
 
           </div>
-          <div id="REACTIVE HE DYES">
+          <div id="REACTIVE HE DYES" style={{ overflowX: 'auto' }}>
             <h1>REACTIVE HE DYES</h1>
             <p>The reactive dyes provided by us impart excellent chemical properties and are manufactured by incorporating many technologies. These are available in undermentioned shades, chemical compositions and specifications.</p>
           
             <h1>Reactive 'HE' Dyes - Fastness Properties</h1>
-      <table>
+      <table style={{ overflowX: 'auto' }} >
         <thead>
           <tr>
             <th>Dye Name</th>
@@ -313,11 +313,11 @@ export const ProjectPage = () => {
         </tbody>
       </table>
           </div>
-          <div id="REACTIVE HOT DYES">
+          <div id="REACTIVE HOT DYES" style={{ overflowX: 'auto' }}>
             <h1>REACTIVE HOT DYES</h1>
             <p>The reactive dyes provided by us impart excellent chemical properties and are manufactured by incorporating many technologies. These are available in undermentioned shades, chemical compositions and specifications.</p>
             <h1>Reactive Hot Dyes - Fastness Properties</h1>
-      <table>
+      <table style={{ overflowX: 'auto' }}>
         <thead>
           <tr>
             <th>Dye Name</th>
@@ -357,11 +357,11 @@ export const ProjectPage = () => {
       </table>
           
           </div>
-          <div id="REACTIVE ME DYES">
+          <div id="REACTIVE ME DYES" style={{ overflowX: 'auto' }}>
             <h1>REACTIVE ME DYES</h1>
             
             <h1>Reactive Me Dyes - Fastness Properties</h1>
-      <table>
+      <table style={{ overflowX: 'auto' }}>
         <thead>
           <tr>
             <th>Dye Name</th>
@@ -455,11 +455,11 @@ export const ProjectPage = () => {
           </div>
           
 
-          <div id="REACTIVE PRINTING DYES">
+          <div id="REACTIVE PRINTING DYES" style={{ overflowX: 'auto' }}>
             <h1>REACTIVE PRINTING DYES</h1>
             
             <h1>Reactive Vinyl Sulphone Base Dye - Fastness Properties</h1>
-      <table>
+      <table style={{ overflowX: 'auto' }}>
         <thead>
           <tr>
             <th>Dye Name</th>

@@ -109,6 +109,13 @@ p.danger {
 }
 /************ Navbar Css ************/
 
+
+
+
+.navbar-collapse.show {
+  background-color: #121212; /* Replace #121212 with the desired color */
+}
+
 .navbar-brand img {
   height: 120px; /* Adjust the height as needed */
   width: auto; /* Ensure the image scales proportionally */
@@ -150,7 +157,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link ,#basic-nav-dropdown{
   
 } 
 .nav-dropdown-menu .dropdown-item {
-  color: #000; /* Change text color to ensure it is readable */
+  color: #fff; /* Change text color to ensure it is readable */
 }
 
 .nav-dropdown-menu .dropdown-item:hover {

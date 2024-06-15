@@ -52,15 +52,7 @@ export const Footer = () => {
             <p>Email: sales@chemzones.com</p>
           </div>
         </div>
-        <div className="footer-quick-links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><Link to="/home">Home</Link></li>
-            <li><Link to="/Aboutus">About Us</Link></li>
-            <li><Link to="/products">Our Products</Link></li>
-            <li><Link to="/connect">Contact Us</Link></li>
-          </ul>
-        </div>
+        
         <div className="footer-products">
           <h4>Our Products</h4>
           <ul>
@@ -68,6 +60,15 @@ export const Footer = () => {
             <li><Link to="/products/product2">Direct Dyes</Link></li>
             <li><Link to="/products/product3">Acid Dyes</Link></li>
             <li><Link to="/products/product4">Dyes Intermediate</Link></li>
+          </ul>
+        </div>
+        <div className="footer-quick-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><Link to="/home">Home</Link></li>
+            <li><Link to="/Aboutus">About Us</Link></li>
+            <li><Link to="/products">Our Products</Link></li>
+            <li><Link to="/connect">Contact Us</Link></li>
           </ul>
         </div>
       </div>

@@ -139,10 +139,10 @@ export const ProjectPage2 = () => {
 
         </div>
 
-          <div id="SUNFAST & NON BENZIDINE DIRECT DYES">
+          <div id="SUNFAST & NON BENZIDINE DIRECT DYES" style={{ overflowX: 'auto' }}>
             <h1>SUNFAST & NON BENZIDINE DIRECT DYES</h1>
            
-      <table>
+      <table style={{ overflowX: 'auto' }}>
         <thead>
           <tr>
             <th >Dye Name</th>
@@ -184,11 +184,11 @@ export const ProjectPage2 = () => {
 
 
           </div>
-          <div id="NON BENZIDINE DIRECT DYES">
+          <div id="NON BENZIDINE DIRECT DYES" style={{ overflowX: 'auto' }}>
             <h1>NON BENZIDINE DIRECT DYES</h1>
             
         
-      <table>
+      <table style={{ overflowX: 'auto' }}>
         <thead>
           <tr>
             <th>Dye Name</th>
