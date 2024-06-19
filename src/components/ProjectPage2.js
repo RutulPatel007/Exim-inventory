@@ -114,7 +114,7 @@ export const ProjectPage2 = () => {
       <div className="project_page">
       
         <div className="menu"  style={{ position: "sticky", top: 0, zIndex: 100 }}>
-          <ul>
+          <ul className="menuu">
           <li className='heading'>DIRECT DYES</li>
             <li><button onClick={() => scrollToSection('SUNFAST & NON BENZIDINE DIRECT DYES')}>SUNFAST & NON BENZIDINE DIRECT DYES</button></li>
             <li><button onClick={() => scrollToSection('NON BENZIDINE DIRECT DYES')}>NON BENZIDINE DIRECT DYES</button></li>

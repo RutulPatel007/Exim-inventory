@@ -60,7 +60,7 @@ export const ProjectPage4 = () => {
       <div className="project_page">
       
         <div className="menu"  style={{ position: "sticky", top: 0, zIndex: 100 }}>
-          <ul>
+          <ul  className="menuu">
           <li className='heading'>DYES INTERMEDIATE</li>
             <li><button onClick={() => scrollToSection('C ACID')}>C ACID</button></li>
             <li><button onClick={() => scrollToSection('EUROPEAN K ACID')}>EUROPEAN K ACID</button></li>

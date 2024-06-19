@@ -506,7 +506,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
   height: 100%;
   background-image: url('./assets/img/aboutus.png');
-  background-size: 150%;
+  background-size: cover;
   animation: zoom 3s ease-in-out infinite alternate;
 }
 
@@ -959,6 +959,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 0;
   padding: 400px 0 100px 0;
   background-image: url('./assets/img/pp1.png');
+  
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -971,7 +972,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .pp3_table td, 
   .pp3_table th, 
   .table_pp4 td, 
-  .table_pp4 th {
+  .table_pp4 th,
+  .menuu li ,
+  .menuu .heading{
     font-size: 14px;
     
   }
@@ -984,7 +987,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .pp3_table td, 
   .pp3_table th, 
   .table_pp4 td, 
-  .table_pp4 th {
+  .table_pp4 th ,
+  .menuu li ,
+  .menuu .heading{
     font-size: 12px;
     
   }
@@ -997,7 +1002,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .pp3_table td, 
   .pp3_table th, 
   .table_pp4 td, 
-  .table_pp4 th {
+  .table_pp4 th,
+  .menuu li ,
+  .menuu .heading {
     font-size: 10px;
     
   }
@@ -1089,9 +1096,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-image: url('./assets/img/quality.png');
-  background-size: 150%;
+  
+  background-size: cover;
   animation: zoom 3s ease-in-out infinite alternate;
 }
 
