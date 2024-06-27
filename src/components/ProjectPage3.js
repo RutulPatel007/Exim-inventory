@@ -223,7 +223,7 @@ export const ProjectPage3 = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h1 >Acid Dyes Manufacturer</h1>
                <br ></br>
-                <p>Our high quality reactive dyes are manufactured</p><p>
+                <p className='photo-content'>Our high quality reactive dyes are manufactured</p><p className='photo-content'>
 & designed to permanently dye.</p>
               </div>}
             </TrackVisibility>  

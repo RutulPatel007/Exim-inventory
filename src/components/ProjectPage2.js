@@ -95,7 +95,7 @@ export const ProjectPage2 = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h1 >Direct Dyes</h1>
                <br ></br>
-                <p>Our high quality reactive dyes are manufactured</p><p>
+                <p className='photo-content'>Our high quality reactive dyes are manufactured</p><p className='photo-content'>
 & designed to permanently dye.</p>
               </div>}
             </TrackVisibility>  
@@ -148,11 +148,11 @@ export const ProjectPage2 = () => {
             <th >Dye Name</th>
             <th>Code</th>
             <th>Color</th>
-            <th>Light</th>
+            {/* <th>Light</th>
             <th>Washing</th>
             <th>Perspiration</th>
             <th>Hypochlorite</th>
-            <th>Dischargeability</th>
+            <th>Dischargeability</th> */}
           </tr>
         </thead>
         <tbody>
@@ -163,8 +163,8 @@ export const ProjectPage2 = () => {
               <td>
                 <div
                   style={{
-                    width: '60px',
-                    height: '50px',
+                    width: '100px',
+                    height: '60px',
                     backgroundColor: dye.color,
                     margin: '3px auto',
                     borderRadius: '4px',
@@ -172,11 +172,8 @@ export const ProjectPage2 = () => {
                   }}
                 ></div>
               </td>
-              <td>{dye.light}</td>
-              <td>{dye.washing}</td>
-              <td>{dye.perspiration}</td>
-              <td>{dye.hypochlorite}</td>
-              <td>{dye.dischargeability}</td>
+              
+       
             </tr>
           ))}
         </tbody>
@@ -194,11 +191,11 @@ export const ProjectPage2 = () => {
             <th>Dye Name</th>
             <th>Code</th>
             <th>Color</th>
-            <th>Light</th>
+            {/* <th>Light</th>
             <th>Washing</th>
             <th>Perspiration</th>
             <th>Hypochlorite</th>
-            <th>Dischargeability</th>
+            <th>Dischargeability</th> */}
           </tr>
         </thead>
         <tbody>
@@ -209,19 +206,15 @@ export const ProjectPage2 = () => {
               <td className="color-cell">
                 <div
                   style={{
-                    width: '60px',
-                    height: '50px',
+                    width: '100px',
+                    height: '60px',
                     backgroundColor: dye.color,
                     margin: '3px auto',
                     borderRadius: '4px',
                   }}
                 ></div>
               </td>
-              <td>{dye.light}</td>
-              <td>{dye.washing}</td>
-              <td>{dye.perspiration}</td>
-              <td>{dye.hypochlorite}</td>
-              <td>{dye.dischargeability}</td>
+             
             </tr>
           ))}
         </tbody>

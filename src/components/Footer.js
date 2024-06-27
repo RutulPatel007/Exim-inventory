@@ -42,7 +42,7 @@ export const Footer = () => {
         <div className="footer-address">
           
           <div className="footer-addresss">
-            <p>28, Shiv Estate,B/h Hotel Chatako,</p>
+            <p >28, Shiv Estate,</p><p>B/h Hotel Chatako,</p>
             
             <p>National Highway No.8,</p>
             <p>Ahmedabad -380026,</p>
@@ -66,8 +66,10 @@ export const Footer = () => {
           <h4>Quick Links</h4>
           <ul>
             <li><Link to="/home">Home</Link></li>
-            <li><Link to="/Aboutus">About Us</Link></li>
             <li><Link to="/products">Our Products</Link></li>
+            <li><Link to="/quality">Quality</Link></li>
+            <li><Link to="/Aboutus">About Us</Link></li>
+            
             <li><Link to="/connect">Contact Us</Link></li>
           </ul>
         </div>
