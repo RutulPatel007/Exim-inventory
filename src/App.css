@@ -903,7 +903,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   font-size: 25px;
 }
+.project_page .content li {
 
+  margin: 10px 30px;
+  padding: 10px;
+  font-size: 25px;
+
+}
 
 /* .project_page th, td {
   

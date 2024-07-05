@@ -19,8 +19,45 @@ export const ProjectPage4 = () => {
   };
 
 
+  const data = [
+    { productName: "1-Phenyl-3-Methyl-5-Pyrazolone", casNo: "89-25-8" },
+    { productName: "Para Tolyl -3-Methyl-5-Pyrazolone", casNo: "86-92-0" },
+    { productName: "1-(2-Chloro Phenyl)-3-Methyl-5-Pyrazolone", casNo: "14580-22-4" },
+    { productName: "1(3-Chloro Phenyl)-3-Methyl-5-Pyrazolone", casNo: "90-31-3" },
+    { productName: "1-Phenyl-3-Carexthoxy-5-Pyrazolone", casNo: "89-33-8" },
+    { productName: "3-Methyl-5-Pyrazolone", casNo: "108-26-9" },
+    { productName: "1-(3-Sulphophenyl)-3-Methyl-5-Pyrazolone", casNo: "119-17-5" },
+    { productName: "1-(4-Sulphophenyl)-3-Methyl-5-Pyrazolone", casNo: "89-36-1" },
+    { productName: "1-(4-Sulphophenyl)-3-Carboxy-5-Pyrazolone", casNo: "118-47-8" },
+    { productName: "1-(2-Chloro-4-Sulphophenyl)-3-Methyl-5-Pyrazolone", casNo: "–" },
+    { productName: "1-(2-Methyl-5-Sulphophenyl)-3-Methyl-5-Pyrazolone", casNo: "5466-86-4" },
+    { productName: "1-(2-Methyl-4-Sulphophenyl)-3-Methyl-5-Pyrazolone", casNo: "118-07-0" },
+    { productName: "1-(4-Sulphamido phenyl)-3-Methyl-5-Pyrazolone", casNo: "13269-73-3" },
+    { productName: "1-(3-Sulphamodi phenyl)-3-Methyl-5-Pyrazolone", casNo: "89-29-2" },
+    { productName: "1-(2:5 Disulphophenyl)-3-Methyl-5-Pyrazolone", casNo: "54817-63-9" },
+    { productName: "1-(2-Chloro-5-Sulphophenyl)-3-Methyl-5-Pyrazolone", casNo: "88-76-6" },
+    { productName: "3-Methyl-1-(3-Sulphophenyl)-5-Pyrazolimine", casNo: "68083-38-5" },
+    { productName: "3-Methyl-1-Phenyl-5-Pyrazolimine", casNo: "1131-18-6" },
+    { productName: "2-Chloro-5-Sulphophenyl-3-Methyl-5-Pyrazolimine", casNo: "68227-68-9" },
+    { productName: "3 Methyl-1(4-Chloro Phenyl)-5-Pyrazolimine", casNo: "13024-90-3" },
+  ];
 
 
+  const applications = [
+    "Raw material for Pigment manufacturing",
+    "Raw material for Solvent Dye manufacturing",
+    "Pharma intermediates",
+    "Agro intermediates",
+    "Raw material for making Hair dyes"
+  ];
+
+  const advantages = [
+    "Largest Pyrazolone manufacturer in India",
+    "More than 200 ton monthly capacity",
+    "Capable of manufacturing 20 pyrazolone derivatives",
+    "Only manufacturer offering HPLC purity of above 99.5%",
+    "Pure products that can be used for pharmaceutical and agrochemicals manufacturing"
+  ];  
 
 
 
@@ -91,675 +128,40 @@ export const ProjectPage4 = () => {
             
         </div>
 
-          <div id="C ACID">
-            <h1>C ACID</h1>
-           
-      
-            <div>
-      <h2>Product Specification</h2>
-      <table className='table_pp4'>
+        <div className="table_pp4">
+      <h1>Product Table</h1>
+      <table>
         <thead>
           <tr>
-            <th>Specification</th>
-            <th>Details</th>
+            <th>Product Name</th>
+            <th>CAS No</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Product Name</td>
-            <td>C ACID (CASSELLA’S ACID)</td>
-          </tr>
-          <tr>
-            <td>Chemical Name</td>
-            <td>2-NAPHTHYLAMINE 4,8 DISULFONIC ACID</td>
-          </tr>
-          <tr>
-            <td>CAS No.</td>
-            <td>131-27-1</td>
-          </tr>
-          <tr>
-            <td>Empirical Formula</td>
-            <td>C<sub>10</sub>H<sub>9</sub>NO<sub>6</sub>S<sub>2</sub></td>
-          </tr>
-          <tr>
-            <td>Molecular Weight</td>
-            <td>303</td>
-          </tr>
-          <tr>
-            <td>Form Supplied</td>
-            <td>DRY POWDER</td>
-          </tr>
-          <tr>
-            <td>Physical Appearance</td>
-            <td>LIGHT PINKISH</td>
-          </tr>
-          <tr>
-            <td>Sales Basis</td>
-            <td>ON 100 % BASIS</td>
-          </tr>
-          <tr>
-            <td>Packing</td>
-            <td>HDPE BAG WITH PE LINER</td>
-          </tr>
-          <tr>
-            <td>Assay</td>
-            <td>70 % MIN.(ON MOL WT : 303)</td>
-          </tr>
-          <tr>
-            <td>Insolubles</td>
-            <td>0.2 % MAX.</td>
-          </tr>
-          <tr>
-            <td>Solubility</td>
-            <td>CLEAR SOLUTION IN DILUTE ALKALI</td>
-          </tr>
+          {data.map((item, index) => (
+            <tr key={index}>
+              <td>{item.productName}</td>
+              <td>{item.casNo}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
-
-
-          </div>
-          <div id="EUROPEAN K ACID">
-            <h1>EUROPEAN K ACID</h1>
-            
+    <h1>Applications of Dyes Intermediates</h1>
+      <ul>
+        {applications.map((application, index) => (
+          <li key={index}>{application}</li>
+        ))}
+      </ul>
+    
         
-            <div>
-      <h2>Product Specification</h2>
-      <table className='table_pp4'>
-        <thead>
-          <tr>
-            <th>Specification</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Product Name</td>
-            <td>EUROPEAN K ACID</td>
-          </tr>
-          <tr>
-            <td>Chemical Name</td>
-            <td>1-AMINO-8-NAPHTHOL,4,6 DISULPHONIC ACID 8-AMINO 1 NAPHTHOL 3,5 DISULPHONIC ACID</td>
-          </tr>
-          <tr>
-            <td>CAS No.</td>
-            <td>40130-23-4-FREE ACID, 40492-14-6-MONO SOD.SALT</td>
-          </tr>
-          <tr>
-            <td>Empirical Formula</td>
-            <td>C<sub>10</sub>H<sub>9</sub>NO<sub>7</sub>S<sub>2</sub></td>
-          </tr>
-          <tr>
-            <td>Form Supplied</td>
-            <td>DRIED POWDER</td>
-          </tr>
-          <tr>
-            <td>Physical Appearance</td>
-            <td>GREYISH OFF WHITE COLOUR</td>
-          </tr>
-          <tr>
-            <td>Sales Basis</td>
-            <td>ON 100 % BASIS</td>
-          </tr>
-          <tr>
-            <td>Packing</td>
-            <td>HDPE BAG WITH PE LINER & JUMBO BAG</td>
-          </tr>
-          <tr>
-            <td>Assay</td>
-            <td>75 % MIN.</td>
-          </tr>
-          <tr>
-            <td>Insolubles</td>
-            <td>0.2 % MAX.</td>
-          </tr>
-          <tr>
-            <td>Solubility</td>
-            <td>SOLUBLE IN WATER</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-          </div>
-
-
-
-
-
-          <div id="AMIDO EPSILON ACID">
-            <h1>AMIDO EPSILON ACID</h1>
-            
-        
-            <div>
-      <h2>Product Specification</h2>
-      <table className='table_pp4'>
-        <thead>
-          <tr>
-            <th>Specification</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Product Name</td>
-            <td>AMIDO EPSILON ACID</td>
-          </tr>
-          <tr>
-            <td>Chemical Name</td>
-            <td>1 NAPHTHOL 3,8 DISULPHONIC ACID</td>
-          </tr>
-          <tr>
-            <td>Molecular Weight</td>
-            <td>303</td>
-          </tr>
-          <tr>
-            <td>Structural Formula</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Insolubles</td>
-            <td>0.2 %</td>
-          </tr>
-          <tr>
-            <td>Solubility</td>
-            <td>SOLUBLE IN WATER</td>
-          </tr>
-          <tr>
-            <td>Purity</td>
-            <td>80 %</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-          </div>
-
-
-
-
-
-          <div id="SULPHO C ACID">
-            <h1>SULPHO C ACID</h1>
-            
-            <div>
-      <h2>Product Specification</h2>
-      <table className='table_pp4'>
-        <thead>
-          <tr>
-            <th>Specification</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Product Name</td>
-            <td>SULPHO C ACID</td>
-          </tr>
-          <tr>
-            <td>Chemical Name</td>
-            <td>2-NAPHTHYLAMINE,4,6,8-TRI SULPHONIC ACID</td>
-          </tr>
-          <tr>
-            <td>Empirical Formula</td>
-            <td>C10H10NO9S2</td>
-          </tr>
-          <tr>
-            <td>Structural Formula</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Insoluble</td>
-            <td>0.25 % MAX.</td>
-          </tr>
-          <tr>
-            <td>Purity</td>
-            <td>55 % MIN. SEMI. DRY</td>
-          </tr>
-          <tr>
-            <td>Unreacted C Acid</td>
-            <td>0.25 %</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-          </div>
-
-
-
-
-
-          <div id="K ACID">
-            <h1>K ACID</h1>
-            
-            <div>
-      <h2>Product Specification</h2>
-      <table className='table_pp4'>
-        <thead>
-          <tr>
-            <th>Specification</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Product Name</td>
-            <td>K ACID</td>
-          </tr>
-          <tr>
-            <td>Chemical Name</td>
-            <td>2-NAPHTHYLAMINE-3,6,8-TRISULFONIC ACID</td>
-          </tr>
-          <tr>
-            <td>Molecular Weight</td>
-            <td>383</td>
-          </tr>
-          <tr>
-            <td>Physical Appearance</td>
-            <td>YELLOWWISH WHITE COLOUR MOIST MATERIAL</td>
-          </tr>
-          <tr>
-            <td>Solubility</td>
-            <td>SOLUBLE IN HOT WATER</td>
-          </tr>
-          <tr>
-            <td>CAS No.</td>
-            <td>118-03-6</td>
-          </tr>
-          <tr>
-            <td>Empirical Formula</td>
-            <td>C10-H9-N-09-S3</td>
-          </tr>
-          <tr>
-            <td>EINECS No.</td>
-            <td>204-229-9</td>
-          </tr>
-          <tr>
-            <td>Purity by N.V.</td>
-            <td>65 % MINI.</td>
-          </tr>
-          <tr>
-            <td>2-Naphthylamine-6, 8-Disulfonic Acid</td>
-            <td>0.3 % MAX.</td>
-          </tr>
-          <tr>
-            <td>Sulfuric Acid, 2-Naphthylamine</td>
-            <td>0.4 % MAX.</td>
-          </tr>
-          <tr>
-            <td>Fe</td>
-            <td>300 PPM MAX.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-          </div>
-
-
-
-
-
-
-
-
-          <div id="SCHAFFER ACID (SODIUM SALT)">
-            <h1>SCHAFFER ACID (SODIUM SALT)</h1>
-            
-        
-            <div>
-      <h2>Product Specification</h2>
-      <table className='table_pp4'>
-        <thead>
-          <tr>
-            <th>Specification</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Product Name</td>
-            <td>SCHAEFFER’S ACID</td>
-          </tr>
-          <tr>
-            <td>Chemical Name</td>
-            <td>2-NAPHTHOL 6-SULFONIC ACID</td>
-          </tr>
-          <tr>
-            <td>Empirical Formula</td>
-            <td>C13H2O4S</td>
-          </tr>
-          <tr>
-            <td>CAS No.</td>
-            <td>93-01-6</td>
-          </tr>
-          <tr>
-            <td>Molecular Weight</td>
-            <td>224</td>
-          </tr>
-          <tr>
-            <td>Assay (Wet)</td>
-            <td>65 % MIN.</td>
-          </tr>
-          <tr>
-            <td>Physical Appearance</td>
-            <td>OFF WHITE TO BROWN COLOUR</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-          </div>
-
-
-
-
-
-
-
-
-
-          <div id="GAMMA ACID">
-            <h1>GAMMA ACID</h1>
-            
-        
-            <div>
-      <h2>Product Specification</h2>
-      <table className='table_pp4'>
-        <thead>
-          <tr>
-            <th>Specification</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Product Name</td>
-            <td>Gamma Acid</td>
-          </tr>
-          <tr>
-            <td>Chemical Name</td>
-            <td>6-AMINO-4-HYDROXY-2NAPHTHALENE SULFONIC ACID <br /> 2-AMINO-6-SULFONIC ACID-8-NAPHTHOL</td>
-          </tr>
-          <tr>
-            <td>CAS No.</td>
-            <td>90-51-7</td>
-          </tr>
-          <tr>
-            <td>Molecular Weight</td>
-            <td>239 grams/mole</td>
-          </tr>
-          <tr>
-            <td>Empirical Formula</td>
-            <td>C10 H9 N O4 S</td>
-          </tr>
-          <tr>
-            <td>Purity</td>
-            <td>Min. 90% by CV</td>
-          </tr>
-          <tr>
-            <td>Amido G Acid Content</td>
-            <td>Min. 0.30%</td>
-          </tr>
-          <tr>
-            <td>Dioxy G Acid Content</td>
-            <td>Min. 0.30%</td>
-          </tr>
-          <tr>
-            <td>Broenner’s Acid Content</td>
-            <td>Min. 1.00%</td>
-          </tr>
-          <tr>
-            <td>Insoluble Matters</td>
-            <td>Min. 0.20%</td>
-          </tr>
-          <tr>
-            <td>Solubility</td>
-            <td>Solubility in dilute alkali</td>
-          </tr>
-          <tr>
-            <td>Physical Appearance</td>
-            <td>Light gray dry powder</td>
-          </tr>
-          <tr>
-            <td>Basis of Sales</td>
-            <td>On 100% real basis</td>
-          </tr>
-          <tr>
-            <td>Packing</td>
-            <td>25/50KGS HDPE bags with double PE liners inside</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-          </div>
-
-
-
-
-
-          <div id="H ACID">
-            <h1>H ACID</h1>
-            
-        
-            <div>
-      <h2>Product Specification</h2>
-      <table className='table_pp4'>
-        <thead>
-          <tr>
-            <th>Specification</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Product Name</td>
-            <td>H ACID</td>
-          </tr>
-          <tr>
-            <td>Chemical Name</td>
-            <td>1 AMINO-8 NAPHTHOL 3-6 DISULPHONIC ACID</td>
-          </tr>
-          <tr>
-            <td>CAS No.</td>
-            <td>9-3-5460</td>
-          </tr>
-          <tr>
-            <td>Empirical Formula</td>
-            <td>C10H9O7NS2</td>
-          </tr>
-          <tr>
-            <td>Molecular Weight</td>
-            <td>319</td>
-          </tr>
-          <tr>
-            <td>Physical Appearance</td>
-            <td>Greyish White</td>
-          </tr>
-          <tr>
-            <td>Insoluble</td>
-            <td>0.2% max.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-          </div>
-
-
-
-
-
-
-
-
-          <div id="G SALT">
-            <h1>G SALT</h1>
-            
-        
-            <div>
-      <h2>Product Specification</h2>
-      <table className='table_pp4'>
-        <thead>
-          <tr>
-            <th>Specification</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Product Name</td>
-            <td>G SALT</td>
-          </tr>
-          <tr>
-            <td>Chemical Name</td>
-            <td>2-NAPHTHOL 6-8-DISULFONIC ACID</td>
-          </tr>
-          <tr>
-            <td>Empirical Formula</td>
-            <td>C14H8O7N2O2S</td>
-          </tr>
-          <tr>
-            <td>CAS No.</td>
-            <td>118-32-1</td>
-          </tr>
-          <tr>
-            <td>EINECS No.</td>
-            <td>204-254-6</td>
-          </tr>
-          <tr>
-            <td>Molecular Weight</td>
-            <td>304</td>
-          </tr>
-          <tr>
-            <td>Assay (Wet)</td>
-            <td>65% min.</td>
-          </tr>
-          <tr>
-            <td>Physical Appearance</td>
-            <td>White to Off White Powder</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-          </div>
-
-
-
-
-
-
-          <div id="SULPHO GAMMA ACID">
-            <h1>SULPHO GAMMA ACID</h1>
-            
-        
-            <div>
-      <h2>Product Specification</h2>
-      <table className='table_pp4'>
-        <thead>
-          <tr>
-            <th>Specification</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Product Name</td>
-            <td>SULPHO GAMMA ACID</td>
-          </tr>
-          <tr>
-            <td>Chemical Name</td>
-            <td>1-NAPHTHOL-3,6-DISULFONIC ACID</td>
-          </tr>
-          <tr>
-            <td>Structural Formula</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Empirical Formula</td>
-            <td>C10H9NO7S2</td>
-          </tr>
-          <tr>
-            <td>CAS No.</td>
-            <td>90-40-4</td>
-          </tr>
-          <tr>
-            <td>Molecular Weight</td>
-            <td>319.31096</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-          </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <div id="SULPHO J ACID">
-            <h1>SULPHO J ACID</h1>
-            
-        
-            <div>
-      <h2>Product Specification</h2>
-      <table className='table_pp4'>
-        <thead>
-          <tr>
-            <th>Specification</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Product Name</td>
-            <td>SULPHO J ACID</td>
-          </tr>
-          <tr>
-            <td>Chemical Name</td>
-            <td>2-AMINO-5-NAPHTHOL-1,7-DISULFONIC ACID</td>
-          </tr>
-          <tr>
-            <td>Molecular Weight</td>
-            <td>319</td>
-          </tr>
-          <tr>
-            <td>Structural Formula</td>
-            <td> </td>
-          </tr>
-          <tr>
-            <td>Purity</td>
-            <td>70% & above</td>
-          </tr>
-          <tr>
-            <td>Isomer</td>
-            <td>Max. 3% Unreacted J Acid</td>
-          </tr>
-          <tr>
-            <td>Insoluble</td>
-            <td>Max. 0.5%</td>
-          </tr>
-          <tr>
-            <td>H.P.L.C.</td>
-            <td>98% & above H.P.L.C. by area</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-          </div>
-
-
-
-
-
-
-
-
-
-
-
+      <h1>Advantages of Dyes Intermediates</h1>
+      <ul>
+        {advantages.map((advantage, index) => (
+          <li key={index}>{advantage}</li>
+        ))}
+      </ul>
+          
 
           
           
