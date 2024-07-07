@@ -12,7 +12,9 @@ import { Footer } from "./components/Footer";
 import {ProjectPage} from "./components/ProjectPage";
 import {ProjectPage2} from "./components/ProjectPage2";
 import {ProjectPage3} from "./components/ProjectPage3";
+
 import {ProjectPage4} from "./components/ProjectPage4";
+import {ProjectPage5} from "./components/ProjectPage5";
 import { ScrollToTop } from './components/ScrollToTop';
 import { Quality } from './components/Quality';
 
@@ -35,6 +37,9 @@ function App() {
             <Route path="/products/product2" element={<ProjectPage2/>}/>
            <Route path="/products/product3" element={<ProjectPage3/>}/>
            <Route path="/products/product4" element={<ProjectPage4/>}/>
+           <Route path="/products/product5" element={<ProjectPage5/>}/>
+           <Route path="/products/product6" element={<ProjectPage/>}/>
+           
 
 
           </Routes>

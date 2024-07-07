@@ -5,7 +5,7 @@ import projImg1 from "../assets/img/pp1crop.png";
 import projImg3 from "../assets/img/pp3crop.png";
 import projImg2 from "../assets/img/pp2crop.png";
 import projImg4 from "../assets/img/pp4crop.png";
-import projImg5 from "../assets/img/google-photos.jpg";
+import projImg5 from "../assets/img/pp5crop.png";
 import projImg6 from "../assets/img/Screenshot (18).png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
@@ -35,14 +35,28 @@ export const Projects = () => {
       imgUrl: projImg3,
       link:""
     },
-  {
+    {
     id:4,
       title: "Dyes Intermediate",
       description: " ",
       imgUrl: projImg4,
       link:""
     },
-    
+    {
+      id:5,
+        title: "Solvent Dyes",
+        description: " ",
+        imgUrl: projImg5,
+        link:""
+      },
+      {
+        id:6,
+        title: "Reactive Dyes",
+        description: "",
+        imgUrl: projImg1,
+        link:""
+        },
+      
   
   ];
 
@@ -50,6 +64,7 @@ export const Projects = () => {
   for (let i = 0; i < projects.length; i += 2) {
     pairedProjects.push([projects[i], projects[i + 1]]);
   }
+
 
   return (
     <section className="project" id="projects">

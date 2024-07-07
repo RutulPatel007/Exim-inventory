@@ -9,7 +9,7 @@ import TrackVisibility from 'react-on-screen';
 import { Link } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 
-export const ProjectPage4 = () => {
+export const ProjectPage5 = () => {
     const [text, setText] = useState('');
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -19,44 +19,51 @@ export const ProjectPage4 = () => {
   };
 
 
-  const data = [
-    { productName: "1-Phenyl-3-Methyl-5-Pyrazolone", casNo: "89-25-8" },
-    { productName: "Para Tolyl -3-Methyl-5-Pyrazolone", casNo: "86-92-0" },
-    { productName: "1-(2-Chloro Phenyl)-3-Methyl-5-Pyrazolone", casNo: "14580-22-4" },
-    { productName: "1(3-Chloro Phenyl)-3-Methyl-5-Pyrazolone", casNo: "90-31-3" },
-    { productName: "1-Phenyl-3-Carexthoxy-5-Pyrazolone", casNo: "89-33-8" },
-    { productName: "3-Methyl-5-Pyrazolone", casNo: "108-26-9" },
-    { productName: "1-(3-Sulphophenyl)-3-Methyl-5-Pyrazolone", casNo: "119-17-5" },
-    { productName: "1-(4-Sulphophenyl)-3-Methyl-5-Pyrazolone", casNo: "89-36-1" },
-    { productName: "1-(4-Sulphophenyl)-3-Carboxy-5-Pyrazolone", casNo: "118-47-8" },
-    { productName: "1-(2-Chloro-4-Sulphophenyl)-3-Methyl-5-Pyrazolone", casNo: "–" },
-    { productName: "1-(2-Methyl-5-Sulphophenyl)-3-Methyl-5-Pyrazolone", casNo: "5466-86-4" },
-    { productName: "1-(2-Methyl-4-Sulphophenyl)-3-Methyl-5-Pyrazolone", casNo: "118-07-0" },
-    { productName: "1-(4-Sulphamido phenyl)-3-Methyl-5-Pyrazolone", casNo: "13269-73-3" },
-    { productName: "1-(3-Sulphamodi phenyl)-3-Methyl-5-Pyrazolone", casNo: "89-29-2" },
-    { productName: "1-(2:5 Disulphophenyl)-3-Methyl-5-Pyrazolone", casNo: "54817-63-9" },
-    { productName: "1-(2-Chloro-5-Sulphophenyl)-3-Methyl-5-Pyrazolone", casNo: "88-76-6" },
-    { productName: "3-Methyl-1-(3-Sulphophenyl)-5-Pyrazolimine", casNo: "68083-38-5" },
-    { productName: "3-Methyl-1-Phenyl-5-Pyrazolimine", casNo: "1131-18-6" },
-    { productName: "2-Chloro-5-Sulphophenyl-3-Methyl-5-Pyrazolimine", casNo: "68227-68-9" },
-    { productName: "3 Methyl-1(4-Chloro Phenyl)-5-Pyrazolimine", casNo: "13024-90-3" },
+  const products = [
+    { id: 1, name: 'Black RLI', ciNo: 'Solvent Black 29' },
+    { id: 2, name: 'Black RE', ciNo: 'Solvent Black 27' },
+    { id: 3, name: 'Black REH', ciNo: 'Solvent Black 27' },
+    { id: 4, name: 'Black REV', ciNo: 'Solvent Black 27' },
+    { id: 5, name: 'Black RLSN', ciNo: 'Solvent Black 45' },
+    { id: 6, name: 'Brown 2RL', ciNo: 'Solvent Brown 43' },
+    { id: 7, name: 'Brown GLS', ciNo: 'Mixture' },
+    { id: 8, name: 'Fire Red GLS', ciNo: 'Solvent Red 89' },
+    { id: 9, name: 'Red 3BLSE', ciNo: 'Solvent Red 91' },
+    { id: 10, name: 'Red 2BLSE', ciNo: 'Solvent Red 122' },
+    { id: 11, name: 'Red 2BLSE-YR', ciNo: 'Solvent Red 122' },
+    { id: 12, name: 'Red G', ciNo: 'Solvent Red 125' },
+    { id: 13, name: 'Red 2BL', ciNo: 'Solvent Red 132' },
+    { id: 14, name: 'Fire Red BL', ciNo: 'Solvent Red 160' },
+    { id: 15, name: 'Yellow R', ciNo: 'Solvent Yellow 82' },
+    { id: 16, name: 'Yellow 2RLS', ciNo: 'Solvent Yellow 62' },
+    { id: 17, name: 'Orange G', ciNo: 'Solvent Orange 11' },
+    { id: 18, name: 'Orange RP', ciNo: 'Solvent Orange 54' },
+    { id: 19, name: 'Orange RL', ciNo: 'Solvent Orange 62' },
+    { id: 20, name: 'Orange R', ciNo: 'Solvent Orange 99' },
+    { id: 21, name: 'Blue 2GLN', ciNo: 'Solvent Blue 48' },
+    { id: 22, name: 'Blue GL', ciNo: 'Solvent Blue 70' },
+    { id: 23, name: 'Dark Violet R', ciNo: '-' }
   ];
 
 
   const applications = [
-    "Raw material for Pigment manufacturing",
-    "Raw material for Solvent Dye manufacturing",
-    "Pharma intermediates",
-    "Agro intermediates",
-    "Raw material for making Hair dyes"
+"Printing Inks (Flexographic, Gravure and offset Inks)",
+"Inkjet Inks (Certain Products)",
+"Stationary Inks",
+"Wood Stains",
+"Paints – Industrial Paints, automotive and other solvent based paints",
+"Printing on Aluminium Foils",
+"Metallized Polyester Films",
+"Leather Topcoats",
   ];
 
   const advantages = [
-    "Largest Pyrazolone manufacturer in India",
-    "More than 200 ton monthly capacity",
-    "Capable of manufacturing 20 pyrazolone derivatives",
-    "Only manufacturer offering HPLC purity of above 99.5%",
-    "Pure products that can be used for pharmaceutical and agrochemicals manufacturing"
+"In-house manufacturing of input raw materials gives us precise control over Quality and Delivery",
+"Extensive range of products, which give brilliant colorations in inks and foils",
+"Excellent solubility in solvents like – Ethanol, MEK, Butyl Cellosolve, Ethoxy / Methoxy – Propanol and other aromatic solvents",
+"Low metal contents as per EN71 and no presence of banned amines as per 21CFR",
+"No precipitation even after long storage",
+"High Heat Stability",
   ];  
 
 
@@ -69,14 +76,14 @@ export const ProjectPage4 = () => {
 
 
 
-<section className="project_page4">
+<section className="project_page5">
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h1 >Dyes Intermediate</h1>
+                <h1 >Solvent Dyes</h1>
                <br ></br>
                 <p className='photo-content'>Our high quality reactive dyes are manufactured</p><p className='photo-content'>
 & designed to permanently dye.</p>
@@ -98,7 +105,7 @@ export const ProjectPage4 = () => {
       
         <div className="menu"  style={{ position: "sticky", top: 0, zIndex: 100 }}>
           <ul  className="menuu">
-          <li className='heading'>DYES INTERMEDIATE</li>
+          <li className='heading'>SOLVENT DYES</li>
             {/* <li><button onClick={() => scrollToSection('C ACID')}>C ACID</button></li>
             <li><button onClick={() => scrollToSection('EUROPEAN K ACID')}>EUROPEAN K ACID</button></li>
             <li><button onClick={() => scrollToSection('AMIDO EPSILON ACID')}>AMIDO EPSILON ACID</button></li>
@@ -124,7 +131,7 @@ export const ProjectPage4 = () => {
 
         <div className="content">
         <div>
-            <h1>DYES INTERMEDIATE</h1>
+            <h1>SOLVENT DYES</h1>
             
         </div>
 
@@ -133,15 +140,17 @@ export const ProjectPage4 = () => {
       <table>
         <thead>
           <tr>
-            <th>Product Name</th>
-            <th>CAS No</th>
+            <th>SR. NO.</th>
+            <th>PRODUCT NAME</th>
+            <th>C.I.NO.</th>
           </tr>
         </thead>
         <tbody>
-          {data.map((item, index) => (
-            <tr key={index}>
-              <td>{item.productName}</td>
-              <td>{item.casNo}</td>
+          {products.map(product => (
+            <tr key={product.id}>
+              <td>{product.id}</td>
+              <td>{product.name}</td>
+              <td>{product.ciNo}</td>
             </tr>
           ))}
         </tbody>

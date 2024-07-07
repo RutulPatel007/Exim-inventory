@@ -73,7 +73,9 @@ export const NavBar = () => {
               <NavDropdown.Item onClick={() => redirectToProjects('product1')} style={{backgroundColor:'#121212' }}>Reactive Dyes</NavDropdown.Item>
               <NavDropdown.Item onClick={() => redirectToProjects('product2')} style={{backgroundColor:'#121212' }}>Direct Dyes</NavDropdown.Item>
               <NavDropdown.Item onClick={() => redirectToProjects('product3')} style={{backgroundColor:'#121212' }}>Acid Dyes</NavDropdown.Item>
+              
               <NavDropdown.Item onClick={() => redirectToProjects('product4')} style={{backgroundColor:'#121212' }}>Dyes Intermediate</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => redirectToProjects('product5')} style={{backgroundColor:'#121212' }}>Solvent Dyes</NavDropdown.Item>
             </NavDropdown>
 
             <Nav.Link as={Link} to="/quality" className={activeLink === 'quality' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('quality')}>
