@@ -82,7 +82,7 @@ export const Projects = () => {
                     <Carousel.Item key={index}>
                       <Row className="justify-content-center">
                         {pair.map((project) => (
-                          <Col key={project.id} className="d-flex justify-content-center" style={{ minHeight: '300px' , minWidth: '450px'}}  >
+                          <Col key={project.id} className="d-flex justify-content-center"  >
                             <ProjectCard {...project}  />
                           </Col>
                         ))}

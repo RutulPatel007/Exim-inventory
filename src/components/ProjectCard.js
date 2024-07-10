@@ -7,7 +7,7 @@ export const ProjectCard = ({id, title, description, imgUrl }) => {
   return (
     // <Router>
     <Col size={12} sm={6} md={4} style={{ minHeight: '300px' , minWidth: '450px'}} >
-      <div className="proj-imgbx"  style={{ height: '300px' , width: '450px'}}>
+      <div className="proj-imgbx"  >
         <img src={imgUrl}   />
         <div className="proj-txtx">
           <h4>{title}</h4>
@@ -15,7 +15,7 @@ export const ProjectCard = ({id, title, description, imgUrl }) => {
           <span>{description}</span>
           <br></br>
           <Link to={`/products/product${id}`}>
-          <button >Know More <ArrowRightCircle size={25} /></button>
+          <button style={{fontWeight:100}} >Know More <ArrowRightCircle size={25} /></button>
           </Link>
         </div>
       </div>
