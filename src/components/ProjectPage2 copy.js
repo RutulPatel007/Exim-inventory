@@ -9,7 +9,7 @@ import TrackVisibility from 'react-on-screen';
 import { Link } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 
-export const ProjectPage2 = () => {
+export const ProjectPage2_copy = () => {
     const [text, setText] = useState('');
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
@@ -86,7 +86,7 @@ export const ProjectPage2 = () => {
 
 
 
-<section className="project_page2">
+<section>
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
@@ -95,8 +95,7 @@ export const ProjectPage2 = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h1 >Direct Dyes</h1>
                <br ></br>
-                <p className='photo-content'>Our high quality direct dyes are manufactured</p><p className='photo-content'>
-& designed to permanently dye.</p>
+                
               </div>}
             </TrackVisibility>  
           </Col>

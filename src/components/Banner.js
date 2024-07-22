@@ -7,6 +7,7 @@ import TrackVisibility from 'react-on-screen';
 import { Link } from 'react-router-dom';
 import SwiperCore from 'swiper';
 import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
+
 import image1 from '../assets/img/image1.jpg';
 import image2 from '../assets/img/image2.jpg';
 import image3 from '../assets/img/image3.jpg';
@@ -98,9 +99,9 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <h2>Welcome to Chemzones</h2>
+                  <h1>Welcome to Chemzones</h1>
                   <br></br>
-                  <p>We are an exporter supplier manufacturer</p><p>and trader of Dyes for various Industries</p>
+                  <p>We are manufacturer</p><p>of Dyes and Dye Intermediates for various Industries</p>
                   <Link to="/connect" className='custom-link'>
                     <button>Let’s Connect <ArrowRightCircle size={25} /></button>
                   </Link>

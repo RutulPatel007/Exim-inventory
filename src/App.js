@@ -15,6 +15,13 @@ import {ProjectPage3} from "./components/ProjectPage3";
 
 import {ProjectPage4} from "./components/ProjectPage4";
 import {ProjectPage5} from "./components/ProjectPage5";
+import { ProjectPage_copy } from './components/ProjectPage copy';
+import { ProjectPage2_copy } from './components/ProjectPage2 copy';
+import { ProjectPage3_copy } from './components/ProjectPage3 copy';
+import { ProjectPage4_copy } from './components/ProjectPage4 copy';
+import { ProjectPage5_copy } from './components/ProjectPage5 copy';
+import { Skills_copy } from './components/Skills copy';
+import { Quality_copy } from './components/Quality copy';
 import { ScrollToTop } from './components/ScrollToTop';
 import { Quality } from './components/Quality';
 
@@ -27,11 +34,11 @@ function App() {
   
         <div className="App-content">
           <Routes>
-          <Route exact path="/" element={<div><Banner/> <Projects/></div>} />
-            <Route path="/home" element={<div><Banner/> <Projects/></div>} />
+          <Route exact path="/" element={<div><Banner/> <Projects/> <Quality_copy/><Skills_copy/></div>} />
+            <Route path="/home" element={<div><Banner/> <Projects/> <Quality_copy/><Skills_copy/></div>} />
             <Route path="/aboutus" element={<Skills />} />
             <Route path="/quality" element={<Quality />} />
-            <Route path="/products" element={<Projects />} />
+            <Route path="/products" element={<div>  <Projects /> <ProjectPage_copy /> <ProjectPage2_copy /> <ProjectPage3_copy /> <ProjectPage4_copy /> <ProjectPage5_copy /></div>} />
             <Route path="/connect" element={<></>} />
             <Route path="/products/product1" element={<ProjectPage/>}/>
             <Route path="/products/product2" element={<ProjectPage2/>}/>
@@ -39,6 +46,8 @@ function App() {
            <Route path="/products/product4" element={<ProjectPage4/>}/>
            <Route path="/products/product5" element={<ProjectPage5/>}/>
            <Route path="/products/product6" element={<ProjectPage/>}/>
+
+            <Route component={<div><Banner/> <Projects/> <Quality_copy/><Skills_copy/></div>} />
            
 
 
