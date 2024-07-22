@@ -62,8 +62,10 @@ export const Contact = () => {
 
   return (
     <section className="contact" id="connect">
+      
       <div className="contact_margin">
       <Container>
+        
         <Row className="align-items-center">
           <Col size={12} md={6}>
             <TrackVisibility>
@@ -73,10 +75,12 @@ export const Contact = () => {
             </TrackVisibility>
           </Col>
           <Col size={12} md={6}>
+          <h5>We’re excited to connect with you! Whether you have questions, feedback, or just want to say hello, we’d love to hear from you. Our team is dedicated to providing you with the best possible experience and support.</h5>  
+      
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <h2>Get In Touch</h2>
+                  <h2><b>Get In Touch</b></h2>
                   <form ref={form} method="post" onSubmit={handleSubmit}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">
@@ -105,6 +109,9 @@ export const Contact = () => {
                 </div>
               }
             </TrackVisibility>
+              <br></br>
+            
+            <h5>We value your input and are always looking for ways to improve. Thank you for taking the time to connect with us. We look forward to hearing from you!</h5>
           </Col>
         </Row>
       </Container>
