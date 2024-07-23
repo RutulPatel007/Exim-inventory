@@ -9,9 +9,9 @@ import SwiperCore from 'swiper';
 import { Autoplay, EffectFade, Pagination } from 'swiper/modules';
 
 import image1 from '../assets/img/image1.jpg';
-import image2 from '../assets/img/image2.jpg';
-import image3 from '../assets/img/image3.jpg';
-import image4 from '../assets/img/image4.jpg';
+import image2 from '../assets/img/image2.png';
+import image3 from '../assets/img/image3.png';
+import image4 from '../assets/img/image4.png';
 import image5 from '../assets/img/image5.jpg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -64,11 +64,11 @@ export const Banner = () => {
   };
 
   const images = [
-    image1,
+    
     image2,
     image3,
     image4,
-    image5,
+  
   ];
 
   return (
