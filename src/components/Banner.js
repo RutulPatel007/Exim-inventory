@@ -101,7 +101,7 @@ export const Banner = () => {
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h1>Welcome to Chemzones</h1>
                   <br></br>
-                  <p>We are manufacturer</p><p>of Dyes and Dye Intermediates for various Industries</p>
+                  <p>We are manufacturer of Dyes</p><p> and Dye Intermediates for various Industries</p>
                   <Link to="/connect" className='custom-link'>
                     <button>Let’s Connect <ArrowRightCircle size={25} /></button>
                   </Link>
