@@ -99,7 +99,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <h1>Chemzones</h1>
+                  <h1>Welcome To Chemzone</h1>
                   <br></br>
                   <p>We are manufacturer of Dyes</p><p> and Dye Intermediates for various Industries</p>
                   <Link to="/connect" className='custom-link'>
