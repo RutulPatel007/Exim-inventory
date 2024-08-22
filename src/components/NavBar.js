@@ -56,37 +56,38 @@ export const NavBar = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav"  className={expanded ? 'navbar-collapse show' : 'navbar-collapse'}>
           <Nav className="ms-auto" >
-            <Nav.Link as={Link} to="/home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>
+            <Nav.Link as={Link} to="/home" className={`${activeLink === 'home' ? 'active' : ''} navbar-link ${scrolled ? 'scrolled' : ''}`}  onClick={() => onUpdateActiveLink('home') }>
               Home
             </Nav.Link>
 
             <NavDropdown
               title={<span onClick={() => redirectToProjects('')} >Our Products</span>}
-              id="basic-nav-dropdown"
+              id={`basic-nav-dropdown${scrolled ? '-scrolled' : ''}`}
               show={dropdownOpen}
               onClick={handleDropdownClick}
+             
               onMouseEnter={() => setDropdownOpen(true)}
               onMouseLeave={() => setDropdownOpen(false)}
-              className="nav-dropdown-menu"
+              className={`${activeLink === 'products' ? 'active' : ''}nav-dropdown-menu ${scrolled ? 'scrolled' : ''}`}
               
             >
-              <NavDropdown.Item onClick={() => redirectToProjects('product1')} style={{backgroundColor:'#121212' }}>Reactive Dyes</NavDropdown.Item>
-              <NavDropdown.Item onClick={() => redirectToProjects('product2')} style={{backgroundColor:'#121212' }}>Direct Dyes</NavDropdown.Item>
-              <NavDropdown.Item onClick={() => redirectToProjects('product3')} style={{backgroundColor:'#121212' }}>Acid Dyes</NavDropdown.Item>
-              <NavDropdown.Item onClick={() => redirectToProjects('product4')} style={{backgroundColor:'#121212' }}>Dyes Intermediate</NavDropdown.Item>
-              <NavDropdown.Item onClick={() => redirectToProjects('product5')} style={{backgroundColor:'#121212' }}>Solvent Dyes</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => redirectToProjects('product1')} style={{backgroundColor:'#ffffff' }}>Reactive Dyes</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => redirectToProjects('product2')} style={{backgroundColor:'#ffffff' }}>Direct Dyes</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => redirectToProjects('product3')} style={{backgroundColor:'#ffffff' }}>Acid Dyes</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => redirectToProjects('product4')} style={{backgroundColor:'#ffffff' }}>Dyes Intermediate</NavDropdown.Item>
+              <NavDropdown.Item onClick={() => redirectToProjects('product5')} style={{backgroundColor:'#ffffff' }}>Solvent Dyes</NavDropdown.Item>
             </NavDropdown>
 
-            <Nav.Link as={Link} to="/quality" className={activeLink === 'quality' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('quality')}>
+            <Nav.Link as={Link} to="/quality" className={`${activeLink === 'quality' ? 'active' : ''} navbar-link ${scrolled ? 'scrolled' : ''}`} onClick={() => onUpdateActiveLink('quality')}>
               Quality
             </Nav.Link>
-            <Nav.Link as={Link} to="/aboutus" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>
+            <Nav.Link as={Link} to="/aboutus" className={`${activeLink === 'skills' ? 'active' : ''} navbar-link ${scrolled ? 'scrolled' : ''}`} onClick={() => onUpdateActiveLink('skills')}>
               About Us
             </Nav.Link>
           </Nav>
 
           <span className="navbar-text">
-            <div className="social-icon">
+            <div className={`social-icon ${scrolled ? 'scrolled' : ''}`}>
               <a href="www.linkedin.com/in/parimal-matholiya-72079b260">
                 <img src={navIcon1} alt="" />
               </a>
@@ -97,7 +98,7 @@ export const NavBar = () => {
              
             </div>
             <HashLink to="/connect">
-              <button className="vvd" onClick={() => setExpanded(false)}>
+              <button className={`vvd ${scrolled ? 'scrolled' : ''}`} onClick={() => onUpdateActiveLink('connect')}>
                 <span>Let’s Connect</span>
               </button>
             </HashLink>

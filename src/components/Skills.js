@@ -43,10 +43,9 @@ export const Skills = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h1 >Since 2022</h1>
+                <h1 ></h1>
                <br ></br>
-                <p>Our high quality reactive dyes are manufactured</p><p>
-& designed to permanently dye.</p>
+                <p></p>
               </div>}
             </TrackVisibility>  
           </Col>

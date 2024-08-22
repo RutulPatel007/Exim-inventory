@@ -386,27 +386,28 @@ export const ProjectPage = () => {
           <tr>
             <th>Dye Name</th>
             <th>Code</th>
-            <th>Color</th>
+            
             
           </tr>
         </thead>
         <tbody>
           {dyeData5.map((dye, index) => (
             <tr key={index}>
-              <td>{dye.name}</td>
+              <td>{dye.name}
+
+                
+              </td>
               <td>{dye.code}</td>
-              <td className="color-cell">
-                <div
+            
+              <div
                   style={{
-                    width: '100px',
-                    height: '60px',
-                    backgroundColor: dye.color,
-                    margin: '3px auto',
-                    borderRadius: '4px',
+                    alignItems: 'center',
+                    height: '80px',
+                    
+                
+                   
                   }}
                 ></div>
-              </td>
-             
               
             </tr>
           ))}
@@ -437,21 +438,21 @@ export const ProjectPage = () => {
         <tbody>
           {dyeData6.map((dye, index) => (
             <tr key={index}>
-              <td>{dye.name}</td>
+              <td>{dye.name}
+              
+              </td>
               <td>{dye.code}</td>
-              <td className="color-cell">
-                <div
+              
+             
+              <div
                   style={{
-                    width: '100px',
-                    height: '60px',
-                    backgroundColor: dye.color,
-                    margin: '3px auto',
-                    borderRadius: '4px',
+                    alignItems: 'center',
+                    height: '80px',
+                    
+                
+                   
                   }}
                 ></div>
-              </td>
-             
-              
             </tr>
           ))}
         </tbody>

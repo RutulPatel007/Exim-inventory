@@ -43,7 +43,7 @@ export const Quality = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h1 >Quality Assurance</h1>
+                <h1 ></h1>
                <br ></br>
                
               </div>}

@@ -374,6 +374,7 @@ export const ProjectPage_copy = () => {
           </div>
           
 
+          
           <div id="REACTIVE VINYL SULPHONE BASE DYE" style={{ overflowX: 'auto' }}>
             <h1>REACTIVE VINYL SULPHONE BASE DYE</h1>
             
@@ -385,27 +386,28 @@ export const ProjectPage_copy = () => {
           <tr>
             <th>Dye Name</th>
             <th>Code</th>
-            <th>Color</th>
+            
             
           </tr>
         </thead>
         <tbody>
           {dyeData5.map((dye, index) => (
             <tr key={index}>
-              <td>{dye.name}</td>
+              <td>{dye.name}
+
+                
+              </td>
               <td>{dye.code}</td>
-              <td className="color-cell">
-                <div
+            
+              <div
                   style={{
-                    width: '100px',
-                    height: '60px',
-                    backgroundColor: dye.color,
-                    margin: '3px auto',
-                    borderRadius: '4px',
+                    alignItems: 'center',
+                    height: '80px',
+                    
+                
+                   
                   }}
                 ></div>
-              </td>
-             
               
             </tr>
           ))}
@@ -436,21 +438,21 @@ export const ProjectPage_copy = () => {
         <tbody>
           {dyeData6.map((dye, index) => (
             <tr key={index}>
-              <td>{dye.name}</td>
+              <td>{dye.name}
+              
+              </td>
               <td>{dye.code}</td>
-              <td className="color-cell">
-                <div
+              
+             
+              <div
                   style={{
-                    width: '100px',
-                    height: '60px',
-                    backgroundColor: dye.color,
-                    margin: '3px auto',
-                    borderRadius: '4px',
+                    alignItems: 'center',
+                    height: '80px',
+                    
+                
+                   
                   }}
                 ></div>
-              </td>
-             
-              
             </tr>
           ))}
         </tbody>
