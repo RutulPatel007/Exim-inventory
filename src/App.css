@@ -426,7 +426,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
   
-  color: #ffffff; /* Set banner text color to black */
+  color: #000; /* Set banner text color to black */
   
   text-align: left; /* Optional: Center text */
 }
@@ -449,8 +449,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 } */
 .banner p {
-  color: #B8B8B8;
-  font-size: 15px;
+  color: #000;
+  font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1em;
   width: 100%;
@@ -459,7 +459,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner button {
   
-  color: #fff;
+  color: #000;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
