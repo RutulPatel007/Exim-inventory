@@ -51,7 +51,7 @@ export const NavBar = () => {
         <Navbar.Brand href="/">
           <img src={logo} alt="Logo" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)}>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(!expanded)}> 
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav"  className={expanded ? 'navbar-collapse show' : 'navbar-collapse'}>
@@ -84,10 +84,10 @@ export const NavBar = () => {
             <Nav.Link as={Link} to="/aboutus" className={`${activeLink === 'skills' ? 'active' : ''} navbar-link ${scrolled ? 'scrolled' : ''}`} onClick={() => onUpdateActiveLink('skills')}>
               About Us
             </Nav.Link>
-          </Nav>
+          </Nav>  
 
           <span className="navbar-text">
-            <div className={`social-icon ${scrolled ? 'scrolled' : ''}`}>
+            <div className={`social-icon`}>
               <a href="www.linkedin.com/in/parimal-matholiya-72079b260">
                 <img src={navIcon1} alt="" />
               </a>
@@ -98,7 +98,7 @@ export const NavBar = () => {
              
             </div>
             <HashLink to="/connect">
-              <button className={`vvd ${scrolled ? 'scrolled' : ''}`} onClick={() => onUpdateActiveLink('connect')}>
+              <button className={`vvd`} onClick={() => onUpdateActiveLink('connect')}>
                 <span>Let’s Connect</span>
               </button>
             </HashLink>

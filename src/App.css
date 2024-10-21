@@ -182,7 +182,7 @@ nav.navbar a.navbar-brand {
 
 nav.navbar .navbar-nav .nav-link.navbar-link ,#basic-nav-dropdown{
   font-weight: 400;
-  color: #ffffff !important; /* Set navbar text color to black */
+  color: #000000 !important; /* Set navbar text color to black */
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -280,7 +280,7 @@ span.navbar-text {
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
-.social-icon.scrolled a {
+.social-icon a {
   width: 42px;
   height: 42px;
   background: rgba(217, 217, 217, 0.1);
@@ -298,25 +298,34 @@ span.navbar-text {
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #000;
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
 }
 .social-icon a:hover::before {
     transform: scale(1);
+   
 }
+
 .social-icon a img {
 	width: 40%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
+  
 }
-.social-icon a:hover img {
+
+ 
+
+.social-icon a img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
-.social-icon.scrolled img{
-  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+.social-icon a img:hover {
+	filter: none;
 }
+
+
+
 .navbar-text button.scrolled {  
   font-weight: 700;
   color: #000000;
@@ -330,8 +339,8 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: #000;
+  border: 1px solid #000;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -347,14 +356,14 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: #000;
   left: 0;
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
 .navbar-text button:hover {
-  color: #121212;
+  color: #ffffff;
 }
 .navbar-text button:hover::before {
 	content: "";
